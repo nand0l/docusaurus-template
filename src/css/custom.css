@@ -1,0 +1,120 @@
+/* Color tokens from main.css */
+:root {
+  --c-navy: #151C36;
+  --c-paper: #FAF9F6;
+  --c-warm-gray: #D9D6CB;
+  --c-pink: #FFD6DD;
+  --c-lilac: #B5B2E7;
+  --c-periwinkle: #6C8EF1;
+  --c-blue: #2069FC;
+  --c-sapphire: #1C50BB;
+  --c-cobalt: #193679;
+  --c-mulberry: #CD427F;
+  --c-amaranth: #FF375B;
+  --c-purple: #9375FF;
+  --c-aqua: #96E6F0;
+  --c-ca-navy: #10162F;
+  --c-ca-beige: #fff0E5;
+  --c-ca-blue: #3A10E5;
+  --c-ca-sky: #66C4FF;
+  --c-background-shade: #EBE9DF;
+}
+
+/* Light mode */
+:root {
+  --ifm-color-primary: var(--c-blue);
+  --ifm-color-primary-dark: var(--c-sapphire);
+  --ifm-color-primary-darker: var(--c-cobalt);
+  --ifm-color-primary-darkest: var(--c-ca-navy);
+  --ifm-color-primary-light: var(--c-periwinkle);
+  --ifm-color-primary-lighter: var(--c-lilac);
+  --ifm-color-primary-lightest: var(--c-pink);
+
+  --ifm-background-color: var(--c-paper);
+  --ifm-background-surface-color: var(--c-background-shade);
+  --ifm-font-color-base: var(--c-navy);
+
+  --ifm-navbar-background-color: var(--c-navy);
+  --ifm-navbar-link-color: var(--c-paper);
+  --ifm-navbar-link-hover-color: var(--c-amaranth);
+
+  --ifm-footer-background-color: var(--c-navy);
+  --ifm-footer-color: var(--c-paper);
+  --ifm-footer-link-color: var(--c-warm-gray);
+  --ifm-footer-link-hover-color: var(--c-amaranth);
+
+  --ifm-code-font-size: 95%;
+  --ifm-global-radius: 10px;
+}
+
+/* Dark mode */
+[data-theme='dark'] {
+  --ifm-color-primary: var(--c-periwinkle);
+  --ifm-color-primary-dark: var(--c-blue);
+  --ifm-color-primary-darker: var(--c-sapphire);
+  --ifm-color-primary-darkest: var(--c-cobalt);
+  --ifm-color-primary-light: var(--c-lilac);
+  --ifm-color-primary-lighter: var(--c-pink);
+  --ifm-color-primary-lightest: #e8e7f8;
+
+  --ifm-background-color: var(--c-navy);
+  --ifm-background-surface-color: var(--c-ca-navy);
+  --ifm-font-color-base: var(--c-paper);
+
+  --ifm-navbar-background-color: var(--c-ca-navy);
+  --ifm-footer-background-color: var(--c-ca-navy);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(32, 105, 252, 0.2);
+}
+
+.navbar .clean-btn {
+  color: var(--c-paper);
+}
+
+.hero--primary {
+  background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-cobalt) 100%);
+  color: var(--c-paper);
+}
+
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3 {
+  letter-spacing: -0.02em;
+}
+
+.theme-doc-markdown h1 {
+  font-size: 2.4rem;
+}
+
+.theme-doc-markdown a {
+  text-decoration: none;
+}
+
+.theme-doc-markdown a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border-radius: 16px;
+  border: 1px solid rgba(32, 105, 252, 0.15);
+}
+
+.button {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.footer {
+  border-top: 1px solid rgba(32, 105, 252, 0.2);
+  padding: 1rem;
+}
