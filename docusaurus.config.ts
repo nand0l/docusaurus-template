@@ -18,7 +18,11 @@ const config: Config = {
   projectName: 'nando-docs',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   headTags: [
     { tagName: 'link', attributes: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/favicon-32x32.png' } },
